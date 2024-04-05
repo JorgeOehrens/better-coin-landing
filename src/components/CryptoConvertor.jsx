@@ -16,7 +16,7 @@ const CryptoConvertor = () => {
         answer: 0,
         showAnswer: false,
         target: 1,
-        showBTC: "",
+        showBTC: "2",
         showUSD: ""
     })
 

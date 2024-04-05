@@ -294,36 +294,13 @@ export const footer_menu = [
     title: "Partner",
     links: [
       {
-        name: "Coin Base",
-        link: "#",
+        name: "Asset Web 3",
+        link: "https://www.assetsweb3.com/",
       },
-      {
-        name: "Coin Desk",
-        link: "#",
-      },
-      {
-        name: "Binance",
-        link: "#",
-      },
+
     ],
-  },
-  {
-    title: "Download",
-    links: [
-      {
-        name: AiFillPlayCircle,
-        link: "#",
-        isImg:true,
-        title:'Play store'
-      },
-      {
-        name: AiFillApple,
-        link: "#",
-        isImg:true,
-        title:'App store'
-      }
-    ],
-  },
+  }
+
 ];
 
 export const socail_media_icons = [
