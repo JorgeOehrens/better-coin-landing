@@ -11,8 +11,7 @@ const Market = () => {
           Where is the<br className="hidden md:block" /> price of Better?
         </h2>
         <p className={`${styles.paragraph} w-[100%]`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem <br />
-          optio obcaecati facilis beatae amet quos, unde itaque sequi, <br />  accusantium repellat dolorum iure, est mollitia.
+        The price of BetterCoin is determined by a technology called "automated virtual arbitrage", using "Dual Wrapped" technology. This means that the value of BetterCoin fluctuates based on the volatility of Bitcoin and Ether, their trading volumes and transaction trends.
         </p>
       </div>
 

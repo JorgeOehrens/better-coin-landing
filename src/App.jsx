@@ -1,4 +1,4 @@
-import { Navbar, Hero, Community, Features, Market, Testimonials, Explore, Footer, Connect, Converter, PopUp } from "./components";
+import { Navbar, Hero, Community, Features, Market, Testimonials, Explore, Footer, Connect,  PopUp } from "./components";
 import styles from './styles/styles';
 import { useState, useEffect } from "react";
 import {useScrollPosition} from './components/Hooks/useScrollPosition';
@@ -32,7 +32,6 @@ const App = () => {
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Community />
-          <Converter />
           <Features />
           <Market />
           <Testimonials />

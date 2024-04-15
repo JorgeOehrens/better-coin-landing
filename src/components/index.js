@@ -21,7 +21,6 @@ export {
     Button,
     GetStarted,
     Community,
-    Converter,
     CryptoConvertor,
     Features,
     Market,

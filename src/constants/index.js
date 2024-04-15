@@ -89,35 +89,11 @@ export const features = [
 export const testimonials = [
   {
     id: "1",
-    content:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores corporis provident dolore quisquam dolorem error blanditiis itaque iste totam tempore nesciunt hic, voluptatum ad at rem esse quaerat ullam voluptates. Nam neque aliquid corrupti blanditiis!",
-    name: "John Doe",
-    title: "Founder & Leader",
+    content:"BetterCoin's innovative approach to utilizing Dual Wrapped technology for leveraging the stability between Bitcoin and Ether offers an intriguing prospect. The ability to conduct transactions directly, without intermediaries, not only simplifies processes but also enhances security. These features make BetterCoin an appealing option for those looking to invest in a cryptocurrency with the potential for stable growth and reduced volatility.",
+    name: "",
+    title: "0xcA4F5258F0ce4B28A5C5fa74e6377e4d51e431b2",
     img: c1
-  },
-  {
-    id: "2",
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo voluptatem optio illo excepturi? Aut ducimus, dignissimos voluptatem amet temporLorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores corporis provident dolore quisquam dolorem error blanditiis ie aspernatur quo adipisci atque est asperiores.",
-    name: "Henry Marck",
-    title: "Founder & Leader",
-    img: c2
-  },
-  {
-    id: "3",
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo voluptatem optio illo excepturi? Aut ducimus, dignissimos voluptatem amet tempore aspernatur quo adipisci atque est asperiores.",
-    name: "Antim Reck",
-    title: "Founder & Leader",
-    img: c3
-  },
-  {
-    id: "4",
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo voluptatem optio illo excepturi? Aut ducimus, dignissimos voluptatem amet tempore aspernatur quo adipisci atque est asperiores.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: c3
-  },
+  }
 ];
 
 export const community_stats = [
