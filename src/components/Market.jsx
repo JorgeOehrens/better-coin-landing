@@ -1,17 +1,20 @@
 import styles, { layout } from "../styles/styles";
 import { markets } from '../constants/index';
+import { useTranslation } from 'react-i18next';
 
 const Market = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <section id="market" className={`${styles.paddingY}`}>
       <div className="block ss:hidden min-h-[100px]"></div>
 
       <div className={`flex justify-around flex-col md:flex-row items-center`}>
         <h2 className={styles.heading2}>
-          Where is the<br className="hidden md:block" /> price of Better?
+        {t("market.tittle.1")}<br className="hidden md:block" /> {t("market.tittle.2")}
         </h2>
         <p className={`${styles.paragraph} w-[100%]`}>
-        The price of BetterCoin is determined by a technology called "automated virtual arbitrage", using "Dual Wrapped" technology. This means that the value of BetterCoin fluctuates based on the volatility of Bitcoin and Ether, their trading volumes and transaction trends.
+        {t("market.description")}
         </p>
       </div>
 

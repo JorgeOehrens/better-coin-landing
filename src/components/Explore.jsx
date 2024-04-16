@@ -5,7 +5,11 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { Button } from '../components';
 import {app} from '../assets/index';
 import {ContactModal} from '../components';
+import { useTranslation } from 'react-i18next';
+
 const Explore = () => {
+  const [t, i18n] = useTranslation("global");
+
   const [showModal, setShowModal] = useState(false);
 
   const openContactModal = () => {
@@ -19,10 +23,10 @@ const Explore = () => {
     <section id="explore" className={`flex flex-col md:flex-row ${styles.paddingY}`}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          Move ahead with us to  <br className="hidden md:block" />explore the world
+        {t("explore.tittle.1")} <br className="hidden md:block" />{t("explore.tittle.2")}
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit natus culpa error modi 
+        {t("explore.description")} 
         </p>
         
         <div className={`md:${styles.flexCenter} inline-block w-full sm:w-auto sm:ml-10 ml-0 sm:mt-0 mt-10`}>

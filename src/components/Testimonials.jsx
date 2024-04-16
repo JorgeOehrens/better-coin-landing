@@ -8,17 +8,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import { AiFillStar } from "react-icons/ai";
+import { useTranslation } from 'react-i18next';
 
 const Testimonials = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <section id="reviews" className={`${styles.paddingY}`}>
       <div className="block ss:hidden min-h-[100px]"></div>
 
       <div className='py-5'>
         <h2 className={`${styles.heading2}`}>
-          Clients Reviews
+        {t("reviews.tittle")}
         </h2>
-        <p className={`${styles.paragraph}`}> What our clients say about us</p>
+        <p className={`${styles.paragraph}`}> {t("reviews.description")}</p>
       </div>
       <div className={` py-5 flex items-start flex-wrap justify-between`}>
         <div className={`w-[100%] sm:w-[78%] md:w-[70%] bg-dimBlue p-4 ss:p-14`}>

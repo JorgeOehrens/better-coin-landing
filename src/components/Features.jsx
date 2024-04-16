@@ -1,15 +1,18 @@
 import { features } from "../constants/index";
 import styles, { layout } from "../styles/styles";
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+    const [t, i18n] = useTranslation("global");
+
     return (
         <section id="features" className={`${styles.paddingY}`}>
             <div className="block ss:hidden min-h-[100px]"></div>
             <h2 className={`text-center ${styles.heading2}`}>
-            Discover Bettercoin's details in next 7 steps
+            {t("features.title")}
             </h2>
             <p className={`${styles.paragraph} mt-5 text-center`}>
-            Bettercoin, a Peer-to-peer & Web3-only complete secure Smart Money.
+            {t("features.description")}
             </p>
             <div className={` ${styles.paddingY} flex items-center justify-between text-center flex-wrap`}>
                 {

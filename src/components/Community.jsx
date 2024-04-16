@@ -4,8 +4,11 @@ import { community_stats } from '../constants';
 import WorldMap from 'react-world-map';
 import getTokenBalance  from '../Server/Etherscan/balance'; 
 import getEthPrice  from '../Server/Etherscan/EthUsd'; 
+import { useTranslation } from 'react-i18next';
 
 const Community = () => {
+  const [t, i18n] = useTranslation("global");
+
   const [selected, onSelect] = useState(null);
   const [balance, setBalance] = useState('Loading...'); // Estado inicial como 'Loading...'
   const [ethPrice, setEthPrice] = useState(null);
@@ -35,21 +38,21 @@ const Community = () => {
       </div>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-        Become a Better Coin Delegate <br className="hidden md:flex" /> What a Delegetae Does? 
+        {t("comunnity.title.1")}<br className="hidden md:flex" /> {t("comunnity.title.2")}
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        A delegate of Better Coin acts as an intermediary in the trading of BETTER, the cryptocurrency. Their role includes connecting sellers and buyers, facilitating transactions without affecting the market price. They earn a commission for this service.
+        {t("comunnity.title.3")}
         </p>
 
         <div className="my-5 flex sm:items-center justify-between w-[100%] flex-wrap">
 
               <div key={1} className="my-5 w-[40%] lg:w-[33%]">
                 <h1 className="text-3xl sm:text-5xl font-medium font-poppins mb-3">{balance} ETH</h1>
-                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>BETTER PRICE (ETH)</p>
+                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>{t("comunnity.price_eth")}</p>
               </div>
               <div key={2} className="my-5 w-[40%] lg:w-[33%]">
                 <h1 className="text-3xl sm:text-5xl font-medium font-poppins mb-3">$ {balanceInUsd} USD</h1>
-                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>BETTER PRICE (USD)</p>
+                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>{t("comunnity.price_usd")}</p>
               </div>
              
         </div>
