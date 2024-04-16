@@ -104,7 +104,7 @@
             "1": "Avanza con nosotros para",
             "2": "explorar el mundo"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit natus culpa error modi",
+        "description": "",
         "button": "Comencemos"
     },
     "contact": {
@@ -112,63 +112,13 @@
         "description": "¿Tienes alguna pregunta? No te preocupes, conéctate con nosotros hoy haciendo clic en el botón de contacto y envía tu mensaje directamente con nosotros",
         "button": "Contacto"
     },
-    "Footer": [
-        {
-          "title": "Enlaces Útiles",
-          "links": [
-            {
-              "name": "Contáctanos",
-              "link": "#"
-            },
-            {
-              "name": "Carreras",
-              "link": "#"
-            },
-            {
-              "name": "Explorar",
-              "link": "https://www.hoobank.com/explore/"
-            },
-            {
-              "name": "Términos y Servicios",
-              "link": "https://www.hoobank.com/terms-and-services/"
-            }
-          ]
-        },
-        {
-          "title": "Comunidad",
-          "links": [
-            {
-              "name": "Centro de Ayuda",
-              "link": "https://www.hoobank.com/help-center/"
-            },
-            {
-              "name": "Socios",
-              "link": "https://www.hoobank.com/partners/"
-            },
-            {
-              "name": "Sugerencias",
-              "link": "https://www.hoobank.com/suggestions/"
-            },
-            {
-              "name": "Blog",
-              "link": "https://www.hoobank.com/blog/"
-            },
-            {
-              "name": "Boletines",
-              "link": "https://www.hoobank.com/newsletters/"
-            }
-          ]
-        },
-        {
-          "title": "Socio",
-          "links": [
-            {
-              "name": "Asset Web 3",
-              "link": "https://www.assetsweb3.com/"
-            }
-          ]
-        }
-    ],
+    "Footer": {
+
+        "description":"La mejor aplicación criptográfica para comprar y vender activos criptográficos en el mundo actual."
+
+    },
+
+   
     "Form": {
         "tittle": "¿Tienes Preguntas?",
         "subtitle": "No te preocupes, envíanos tus preguntas.",

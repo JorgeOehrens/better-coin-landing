@@ -33,56 +33,134 @@ export const header_menu = [
     title: "Contact",
   }
 ];
-
+export const header_menu_es = [
+  {
+    id: "home",
+    title: "Inicio",
+  },
+  {
+    id: "community",
+    title: "Comunidad",
+  },
+  {
+    id: "features",
+    title: "Características",
+  },
+  {
+    id: "market",
+    title: "Mercado",
+  },
+  {
+    id: "reviews",
+    title: "Reseñas",
+  },
+  {
+    id: "convertor",
+    title: "Convertidor",
+  },
+  {
+    id: "contact",
+    title: "Contacto",
+  }
+];
 export const features = [
   {
     id: "feature-1",
    icon: AiFillStar,
     title: "Smartcoin is a new cryptocurrency concept  with transactional intelligence abilities",
-    content:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. dignissimos tenetur sapiente. Corrupti, inventore?      ",
+    content:"",
   },
   {
     id: "feature-2",
    icon: SiFsecure,
     title: "Bettercoin is a Web3 suite designed for swaps exclusively between user wallets. ",
-    content:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde dolorem dignissimos tenetur sapiente ipsa.",
+    content:"",
+
   },
   {
     id: "feature-3",
    icon: SiMastercomfig,
     title: "Worldwide launch",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur sapiente ipsa. Corrupti, inventore? "
+    content:"",
+
   },
   {
     id: "feature-4",
    icon: SiMastercomfig,
     title: "Underlying principles of Bettercoin design ",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur sapiente ipsa. Corrupti, inventore? "
+    content:"",
+
   },
   {
     id: "feature-5",
    icon: SiMastercomfig,
     title: "Tokens that need to be imported into the user's wallet ",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur sapiente ipsa. Corrupti, inventore? "
+    content:"",
+
   },
   {
     id: "feature-6",
    icon: SiMastercomfig,
     title: "Double transaction system explained in detail ",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur sapiente ipsa. Corrupti, inventore? "
+    content:"",
+
   },
   {
     id: "feature-7",
    icon: SiMastercomfig,
     title: "Delegated sale function explained in detail ",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur sapiente ipsa. Corrupti, inventore? "
+    content:"",
+
+  },
+];
+export const features_es = [
+  {
+    id: "feature-1",
+    icon: AiFillStar,
+    title: "Smartcoin es un nuevo concepto de criptomoneda con capacidades de inteligencia transaccional",
+    content:"",
+  },
+  {
+    id: "feature-2",
+    icon: SiFsecure,
+    title: "Bettercoin es una suite de Web3 diseñada exclusivamente para intercambios entre billeteras de usuarios.",
+    content:"",
+
+  },
+  {
+    id: "feature-3",
+    icon: SiMastercomfig,
+    title: "Lanzamiento mundial",
+    content:"",
+
+  },
+  {
+    id: "feature-4",
+    icon: SiMastercomfig,
+    title: "Principios fundamentales del diseño de Bettercoin",
+    content:"",
+
+  },
+  {
+    id: "feature-5",
+    icon: SiMastercomfig,
+    title: "Tokens que necesitan ser importados a la billetera del usuario",
+    content:"",
+
+  },
+  {
+    id: "feature-6",
+    icon: SiMastercomfig,
+    title: "Sistema de doble transacción explicado en detalle",
+    content:"",
+
+  },
+  {
+    id: "feature-7",
+    icon: SiMastercomfig,
+    title: "Función de venta delegada explicada en detalle",
+    content:"",
+
   },
 ];
 
@@ -277,6 +355,63 @@ export const footer_menu = [
     ],
   }
 
+];
+export const footer_menu_es = [
+  {
+    title: "Enlaces Útiles",
+    links: [
+      {
+        name: "Contáctanos",
+        link: "#",
+      },
+      {
+        name: "Carreras",
+        link: "#",
+      },
+      {
+        name: "Explorar",
+        link: "https://www.hoobank.com/explore/",
+      },
+      {
+        name: "Términos y Servicios",
+        link: "https://www.hoobank.com/terms-and-services/",
+      },
+    ],
+  },
+  {
+    title: "Comunidad",
+    links: [
+      {
+        name: "Centro de Ayuda",
+        link: "https://www.hoobank.com/help-center/",
+      },
+      {
+        name: "Socios",
+        link: "https://www.hoobank.com/partners/",
+      },
+      {
+        name: "Sugerencias",
+        link: "https://www.hoobank.com/suggestions/",
+      },
+      {
+        name: "Blog",
+        link: "https://www.hoobank.com/blog/",
+      },
+      {
+        name: "Boletines",
+        link: "https://www.hoobank.com/newsletters/",
+      },
+    ],
+  },
+  {
+    title: "Socio",
+    links: [
+      {
+        name: "Activos Web 3",
+        link: "https://www.assetsweb3.com/",
+      },
+    ],
+  }
 ];
 
 export const socail_media_icons = [

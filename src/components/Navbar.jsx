@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { logo } from '../assets'
-import { header_menu } from "../constants";
+import { header_menu, header_menu_es } from "../constants";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import styles from '../styles/styles';
@@ -9,6 +9,7 @@ import en from '../assets/flags/en.png';
 import es from '../assets/flags/es.png';
 
 const Navbar = () => {
+
     const [active, setActive] = useState("Home");
     const [toggle, setToggle] = useState(false);
     const [language, setLanguage] = useState('en');
@@ -16,28 +17,28 @@ const Navbar = () => {
 
     const handleChangeLanguage = (lang) => {
         i18n.changeLanguage(lang);
-        setLanguage(lang); // Actualiza el estado del idioma actual
+        setLanguage(lang); 
     };
+    const currentMenu = language === 'en' ? header_menu : header_menu_es;
 
     return (
         <nav className={`w-full ${styles.boxWidth} flex py-6 justify-between items-center navbar`}>
             <img src={logo} alt="Biteezy" className="logoStyle w-[30%] ss:w-[22%] sm:w-[15%] md:w-[22%]" />
      
-            {/* Navbar for desktop screen */}
             <ul className="list-none md:flex hidden justify-end items-center flex-1">
                 {
-                    header_menu.map((nav, index) => (
+                    currentMenu.map((nav, index) => (
                         <li
                             key={nav.id}
                             className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary ${active === nav.title ? "text-white" : "text-dimWhite"
-                                } ${index === header_menu.length - 1 ? "mr-0" : "mr-10"}`}
+                                } ${index === currentMenu.length - 1 ? "mr-0" : "mr-10"}`}
                             onClick={() => setActive(nav.title)}
                         >
-                            <a href={`#${nav.id}`}>{nav.title}</a>
+                            <a href={`#${nav.id}`}> {t(nav.title)}</a>
                         </li>
                     ))
                 }
-                                <button className={`language-button ${language === 'en' ? 'active' : ''}`} onClick={() => handleChangeLanguage("en")}>
+               <button className={`language-button ${language === 'en' ? 'active' : ''}`} onClick={() => handleChangeLanguage("en")}>
                     <img src={en} alt="English" />
                 </button>
                 <button className={`language-button ${language === 'es' ? 'active' : ''}`} onClick={() => handleChangeLanguage("es")}>
@@ -73,6 +74,12 @@ const Navbar = () => {
                                 <a href={`#${nav.id}`}>{nav.title}</a>
                             </li>
                         ))}
+                                       <button className={`language-button ${language === 'en' ? 'active' : ''}`} onClick={() => handleChangeLanguage("en")}>
+                    <img src={en} alt="English" />
+                </button>
+                <button className={`language-button ${language === 'es' ? 'active' : ''}`} onClick={() => handleChangeLanguage("es")}>
+                    <img src={es} alt="Español" />
+                </button>
                     </ul>
                 </div>
             </div>
