@@ -56,7 +56,7 @@ const Footer = () => {
 
       <div className="w-full text-center flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
         <p className={`${styles.paragraph}`}>
-          Copyright Ⓒ {getYear} Biteezy. All Rights Reserved.
+          Copyright Ⓒ {getYear} BetterCoin. All Rights Reserved.
         </p>
 
         <div className="flex flex-row md:mt-0 mt-6">

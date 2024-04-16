@@ -15,7 +15,7 @@ const Market = () => {
         </p>
       </div>
 
-      <div className="container mx-auto rounded-3xl sm:py-8 sm:selection:px-4 shadow sm:mt-10">
+      {/* <div className="container mx-auto rounded-3xl sm:py-8 sm:selection:px-4 shadow sm:mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3">
           {
             markets.map(market => (
@@ -37,7 +37,7 @@ const Market = () => {
             )
           }
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

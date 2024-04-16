@@ -45,11 +45,11 @@ const Community = () => {
 
               <div key={1} className="my-5 w-[40%] lg:w-[33%]">
                 <h1 className="text-3xl sm:text-5xl font-medium font-poppins mb-3">{balance} ETH</h1>
-                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>ETH Price</p>
+                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>BETTER PRICE (ETH)</p>
               </div>
               <div key={2} className="my-5 w-[40%] lg:w-[33%]">
                 <h1 className="text-3xl sm:text-5xl font-medium font-poppins mb-3">$ {balanceInUsd} USD</h1>
-                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>USD Price</p>
+                <p className={`md:w-[95%] font-poppins font-normal text-greyish leading-[30.8px] text-[18px]`}>BETTER PRICE (USD)</p>
               </div>
              
         </div>

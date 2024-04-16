@@ -1,9 +1,23 @@
+import { useState } from 'react';
+
 import styles from '../styles/styles';
 import { GetStarted, Button } from '../components';
 import { bitcoin } from '../assets';
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { ContactModal } from '../components';
+import { AiFillPhone } from "react-icons/ai";
+
 
 const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openContactModal = () => {
+    setShowModal(true);
+  }
+
+  const closeContactModal = () => {
+    setShowModal(false);
+  }
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col`}>
@@ -30,8 +44,17 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[80%] md:max-w-[80%] lg:max-w-[85%] mt-5`}>
         Bettercoin´s price capitalizes daily on the most bullish or least bearish trend between Bitcoin and Ether, benefiting you automatically.
         </p>
+       
 
-        <Button title='Learn More' icon={<AiOutlineArrowRight></AiOutlineArrowRight>} />
+        <div className={`md:${styles.flexCenter} inline-block w-full sm:w-auto sm:ml-10 ml-0 sm:mt-0 mt-10`}>
+          <Button onclick={openContactModal} title="Learn More" icon={<AiOutlineArrowRight></AiOutlineArrowRight>} />
+        </div>
+
+        {
+          showModal &&
+          <ContactModal close={closeContactModal} />
+        }
+
       </div>
 
       <div className={`flex-1 flex ${styles.flexEnd} relative`}>
