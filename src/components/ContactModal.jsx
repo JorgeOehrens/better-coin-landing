@@ -7,9 +7,12 @@ import { collection, addDoc } from "firebase/firestore";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
 
 
 const ContactModal = ({ close }) => {
+    const [t, i18n] = useTranslation("global");
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -82,8 +85,8 @@ const ContactModal = ({ close }) => {
 
                         <div className="p-3 sm:p-10 flex justify-between border-b border-solid border-slate-50 pb-5">
                             <div>
-                                <h2 className="text-2xl font-semibold my-2"> Have any Queries? </h2>
-                                <p className={`${styles.paragraph}`}> No worries, Send your queries to us. </p>
+                                <h2 className="text-2xl font-semibold my-2"> {t("Form.tittle")} </h2>
+                                <p className={`${styles.paragraph}`}> {t("Form.subtitle")} </p>
                             </div>
                             <div className="p-3 sm:p-0 text-2xl sm:text-3xl font-extrabold cursor-pointer" onClick={close}>
                                 <AiOutlineClose />
@@ -94,22 +97,22 @@ const ContactModal = ({ close }) => {
                             <form onSubmit={submitForm} className="text-white flex flex-col">
                                 <div className="px-3 py-3 sm:px-10 sm:py-8 border-b border-solid border-slate-50">
                                     <div className="my-5">
-                                        <input onChange={inputHandler} value={formData.name} name="name" type="text" placeholder="Your Name" className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" />
+                                        <input onChange={inputHandler} value={formData.name} name="name" type="text" placeholder={t("Form.label_name")} className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" />
                                     </div>
                                     <div className="my-5">
-                                        <input onChange={inputHandler} value={formData.email} name="email" type="email" placeholder="Your Work Email" className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" />
+                                        <input onChange={inputHandler} value={formData.email} name="email" type="email" placeholder={t("Form.label_email")} className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" />
                                     </div>
                                     <div className="my-5">
-                                        <input onChange={inputHandler} value={formData.subject} name="subject" type="subject" placeholder="Your Subject" className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" />
+                                        <input onChange={inputHandler} value={formData.subject} name="subject" type="subject" placeholder={t("Form.label_subject")} className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" />
                                     </div>
                                     <div className="my-5">
-                                        <textarea onChange={inputHandler} value={formData.message} name="message" rows="2" id="" className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" placeholder="Your Message"></textarea>
+                                        <textarea onChange={inputHandler} value={formData.message} name="message" rows="2" id="" className="border border-solid border-Slate-50 outline-none px-5 py-3 rounded-2xl w-full bg-transparent" placeholder={t("Form.label_message")}></textarea>
                                     </div>
                                 </div>
 
                                 <div className="sm:px-10">
                                     <button disabled={loader} type="submit" className={`flex ${styles.flexCenter} py-4 px-8 my-3 sm:my-8 font-poppins font-medium text-[16px] text-primary primary_gradient rounded-full outline-none ${loader && 'opacity-50'}`}>
-                                        Send Message <span className='ml-3'> <AiOutlineSend /> </span>
+                                    {t("Form.button")}<span className='ml-3'> <AiOutlineSend /> </span>
                                     </button>
                                 </div>
                             </form>

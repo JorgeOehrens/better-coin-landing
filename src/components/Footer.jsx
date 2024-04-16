@@ -1,8 +1,11 @@
 import styles from "../styles/styles";
 import { logo } from "../assets";
 import { footer_menu, socail_media_icons } from "../constants";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const [t, i18n] = useTranslation("global");
+
   const getYear = new Date().getFullYear();
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -14,7 +17,9 @@ const Footer = () => {
             className="w-[150px] h-[72.14px] object-contain ml-[-12px]"
           />
           <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-            Best Crypto App to Buy and sell crypto assets in present world.
+          {t("Footer.description")}
+
+            
           </p>
         </div>
 

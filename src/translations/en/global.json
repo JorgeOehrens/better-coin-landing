@@ -143,65 +143,70 @@
         "description":"Have any query ? No worries, connect with us today by clicking on contact us button and send you message directly with us",
         "button":"Contact Us"
     },
-    "Footer":[
-        {
-          "title": "Useful Links",
-          "links": [
+    "Footer":{
+        "description":"Best Crypto App to Buy and sell crypto assets in present world.",
+        "menu": [
             {
-              "name": "Contact us",
-              "link": "#"
+              "title": "Useful Links",
+              "links": [
+                {
+                  "name": "Contact us",
+                  "link": "#"
+                },
+                {
+                  "name": "Carrers",
+                  "link": "#"
+                },
+                {
+                  "name": "Explore",
+                  "link": "https://www.hoobank.com/explore/"
+                },
+                {
+                  "name": "Terms & Services",
+                  "link": "https://www.hoobank.com/terms-and-services/"
+                }
+              ]
             },
             {
-              "name": "Carrers",
-              "link": "#"
+              "title": "Community",
+              "links": [
+                {
+                  "name": "Help Center",
+                  "link": "https://www.hoobank.com/help-center/"
+                },
+                {
+                  "name": "Partners",
+                  "link": "https://www.hoobank.com/partners/"
+                },
+                {
+                  "name": "Suggestions",
+                  "link": "https://www.hoobank.com/suggestions/"
+                },
+                {
+                  "name": "Blog",
+                  "link": "https://www.hoobank.com/blog/"
+                },
+                {
+                  "name": "Newsletters",
+                  "link": "https://www.hoobank.com/newsletters/"
+                }
+              ]
             },
             {
-              "name": "Explore",
-              "link": "https://www.hoobank.com/explore/"
-            },
-            {
-              "name": "Terms & Services",
-              "link": "https://www.hoobank.com/terms-and-services/"
+              "title": "Partner",
+              "links": [
+                {
+                  "name": "Asset Web 3",
+                  "link": "https://www.assetsweb3.com/"
+                }
+          
+              ]
             }
+          
           ]
-        },
-        {
-          "title": "Community",
-          "links": [
-            {
-              "name": "Help Center",
-              "link": "https://www.hoobank.com/help-center/"
-            },
-            {
-              "name": "Partners",
-              "link": "https://www.hoobank.com/partners/"
-            },
-            {
-              "name": "Suggestions",
-              "link": "https://www.hoobank.com/suggestions/"
-            },
-            {
-              "name": "Blog",
-              "link": "https://www.hoobank.com/blog/"
-            },
-            {
-              "name": "Newsletters",
-              "link": "https://www.hoobank.com/newsletters/"
-            }
-          ]
-        },
-        {
-          "title": "Partner",
-          "links": [
-            {
-              "name": "Asset Web 3",
-              "link": "https://www.assetsweb3.com/"
-            }
-      
-          ]
-        }
-      
-      ],
+    }
+    
+   ,
     "Form":{
         "tittle":"Have any Queries?",
         "subtitle":"No worries, Send your queries to us.",
