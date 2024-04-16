@@ -1,0 +1,57 @@
+{
+    "header":{
+        "menu":[
+            {
+              "id": "home",
+              "title": "Home"
+            },
+            {
+              "id": "community",
+              "title": "Community"
+            },
+            {
+              "id": "features",
+              "title": "Features"
+            },
+            {
+              "id": "market",
+              "title": "Market"
+            },
+            {
+              "id": "reviews",
+              "title": "Reviews"
+            },
+            {
+              "id": "convertor",
+              "title": "Convertor"
+            },
+            {
+              "id": "contact",
+              "title": "Contact"
+            }
+          ]
+    },
+    "home":{
+        "button_plane":"Get's started",
+        "subtitle":{
+            "1": "The",
+            "2": "First",
+            "3": "Smartcoin"
+
+
+
+        },
+        
+        "tittle":{
+            "1":"Bettercoin's projection on",
+            "2":"Bitcoin",
+            "3": "Trend"
+
+        },
+        "description":"Bettercoin´s price capitalizes daily on the most bullish or least bearish trend between Bitcoin and Ether, benefiting you automatically.",
+        "button":"Learn More"
+
+
+
+    }
+}

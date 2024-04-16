@@ -4,15 +4,25 @@ import { header_menu } from "../constants";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import styles from '../styles/styles';
+import { useTranslation } from 'react-i18next';
+import en from '../assets/flags/en.png';
+import es from '../assets/flags/es.png';
 
 const Navbar = () => {
     const [active, setActive] = useState("Home");
     const [toggle, setToggle] = useState(false);
+    const [language, setLanguage] = useState('en');
+    const [t, i18n] = useTranslation("global");
+
+    const handleChangeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+        setLanguage(lang); // Actualiza el estado del idioma actual
+    };
 
     return (
         <nav className={`w-full ${styles.boxWidth} flex py-6 justify-between items-center navbar`}>
             <img src={logo} alt="Biteezy" className="logoStyle w-[30%] ss:w-[22%] sm:w-[15%] md:w-[22%]" />
-
+     
             {/* Navbar for desktop screen */}
             <ul className="list-none md:flex hidden justify-end items-center flex-1">
                 {
@@ -27,6 +37,13 @@ const Navbar = () => {
                         </li>
                     ))
                 }
+                                <button className={`language-button ${language === 'en' ? 'active' : ''}`} onClick={() => handleChangeLanguage("en")}>
+                    <img src={en} alt="English" />
+                </button>
+                <button className={`language-button ${language === 'es' ? 'active' : ''}`} onClick={() => handleChangeLanguage("es")}>
+                    <img src={es} alt="Español" />
+                </button>
+                
             </ul>
 
             {/* Navbar for small devices */}

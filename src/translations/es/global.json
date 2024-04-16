@@ -1,0 +1,49 @@
+{
+    "header": {
+        "menu": [
+            {
+                "id": "inicio",
+                "title": "Inicio"
+            },
+            {
+                "id": "comunidad",
+                "title": "Comunidad"
+            },
+            {
+                "id": "caracteristicas",
+                "title": "Características"
+            },
+            {
+                "id": "mercado",
+                "title": "Mercado"
+            },
+            {
+                "id": "reseñas",
+                "title": "Reseñas"
+            },
+            {
+                "id": "convertidor",
+                "title": "Convertidor"
+            },
+            {
+                "id": "contacto",
+                "title": "Contacto"
+            }
+        ]
+    },
+    "home": {
+        "button_plane": "Comienza ahora",
+        "subtitle": {
+            "1": "La",
+            "2": "Primera",
+            "3": "Smartcoin"
+        },
+        "tittle": {
+            "1": "Proyección de Bettercoin sobre",
+            "2": "Bitcoin",
+            "3": "Tendencia"
+        },
+        "description": "El precio de Bettercoin capitaliza diariamente sobre la tendencia más alcista o menos bajista entre Bitcoin y Ether, beneficiándote automáticamente.",
+        "button": "Aprende más"
+    }
+}

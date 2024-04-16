@@ -12,6 +12,24 @@
   background-color: #ffff;
   border-radius:44px   ;
 }
+.language-button {
+  margin-left: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.language-button img {
+  display: block;
+  width: 24px;
+  height: auto;
+}
+
+.language-button.active {
+  background-color: #f0f0f0; /* Cambia esto según tu paleta de colores */
+}
 
 *{
   margin: 0;
