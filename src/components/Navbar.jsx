@@ -60,7 +60,7 @@ const Navbar = () => {
                         } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
                 >
                     <ul className="list-none flex justify-end items-start flex-1 flex-col">
-                        {header_menu.map((nav, index) => (
+                        {currentMenu.map((nav, index) => (
                             <li
                                 key={nav.id}
                                 className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"
@@ -74,7 +74,7 @@ const Navbar = () => {
                                 <a href={`#${nav.id}`}>{nav.title}</a>
                             </li>
                         ))}
-                                       <button className={`language-button ${language === 'en' ? 'active' : ''}`} onClick={() => handleChangeLanguage("en")}>
+                <button className={`language-button ${language === 'en' ? 'active' : ''}`} onClick={() => handleChangeLanguage("en")}>
                     <img src={en} alt="English" />
                 </button>
                 <button className={`language-button ${language === 'es' ? 'active' : ''}`} onClick={() => handleChangeLanguage("es")}>
